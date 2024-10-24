@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nhóm 9</h1>
+    </header>
+    <!-- Tab Menu -->
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'GioiThieu')"
+        id="defaultOpen"
+      >
+        Giới Thiệu
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'ThanhVien')">
+        Thông Tin Thành Viên
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'LienHe')">
+        Liên Hệ
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'DuAn')">Dự Án</button>
+      <button class="tablinks" onclick="openTab(event, 'KetQua')">
+        Kết Quả
+      </button>
+    </div>
+
+    <!-- Giới thiệu nhóm -->
+    <div id="GioiThieu" class="tabcontent">
+      <div class="introduction">
+        <img
+          src="https://png.pngtree.com/element_origin_min_pic/16/11/01/941b59289db9efd90cd39128c9144f7f.jpg"
+          alt="Introduction Image"
+        />
+        <div class="intro-text">
+          <h2>Giới Thiệu</h2>
+          <p>
+            Chào mừng đến với nhóm 9! Chúng tôi chuyên về blockchain và cộng
+            đồng.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thông tin thành viên -->
+    <div id="ThanhVien" class="tabcontent">
+      <h2>Thông Tin Thành Viên</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <img src="./img/unnamed.jpg" alt="Member 1 Image" />
+          <h3>Nephine</h3>
+          <p>DRep Pioneer Leader</p>
+          <a href="https://nguyenvandono1.github.io/canhan/" target="_blank"
+            >Website cá nhân</a
+          >
+        </div>
+        <div class="member-card">
+          <img
+            src="./img/z5962456959340_d50983da5ec22e5554a0f15890570a7a.jpg"
+            alt="Member 2 Image"
+          />
+          <h3>Thành viên 2</h3>
+          <p>Chức vụ</p>
+          <a
+            href="https://diendznhatvutru.github.io/hci_23130061/index.html"
+            target="_blank"
+            >Website cá nhân</a
+          >
+        </div>
+        <div class="member-card">
+          <img
+            src="./img/z5962460611979_ee4bb6edbd3b641d3a99308b09fc2e83.jpg"
+            alt="Member 3 Image"
+          />
+          <h3>Thành viên 3</h3>
+          <p>Chức vụ</p>
+          <a
+            href="https://phungthu31.github.io/HCI23130317/index.html"
+            target="_blank"
+            >Website cá nhân</a
+          >
+        </div>
+        <div class="member-card">
+          <img
+            src="./img/z5962519282041_6022d483a0e2f2523d2d2fef318d9c29.jpg"
+            alt="Member 4 Image"
+          />
+          <h3>Thành viên 4</h3>
+          <p>Chức vụ</p>
+          <a href="https://member4website.com" target="_blank"
+            >Website cá nhân</a
+          >
+        </div>
+        <div class="member-card">
+          <img src="./img/AS (41).jpg" alt="Member 5 Image" />
+          <h3>Thành viên 5</h3>
+          <p>Chức vụ</p>
+          <a href="https://member5website.com" target="_blank"
+            >Website cá nhân</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Liên hệ -->
+    <div id="LienHe" class="tabcontent">
+      <h2>Liên Hệ</h2>
+      <p>Contact to Email: diennguyen17102005@gmail.com</p>
+      <p>Contact to Facebook: <a href="#">@groupabc</a></p>
+      <p>Contact to Email: 0942607187</p>
+    </div>
+
+    <!-- Dự án -->
+    <div id="DuAn" class="tabcontent">
+      <h2>Dự Án</h2>
+      <table class="project-table">
+        <tr>
+          <th>Tên Dự Án</th>
+          <th>Chức Năng</th>
+        </tr>
+        <tr>
+          <td>Dự án 1</td>
+          <td>Quản lý blockchain, Phát triển cộng đồng</td>
+        </tr>
+        <tr>
+          <td>Dự án 2</td>
+          <td>Ứng dụng phân quyền</td>
+        </tr>
+        <!-- Thêm các dự án khác vào đây -->
+      </table>
+    </div>
+
+    <!-- Kết quả -->
+    <div id="KetQua" class="tabcontent">
+      <h2>Kết Quả</h2>
+      <table class="result-table">
+        <tr>
+          <th>Tên Dự Án</th>
+          <th>Tiến Trình (%)</th>
+        </tr>
+        <tr>
+          <td>Dự án 1</td>
+          <td><progress value="75" max="100"></progress> 75%</td>
+        </tr>
+        <tr>
+          <td>Dự án 2</td>
+          <td><progress value="50" max="100"></progress> 50%</td>
+        </tr>
+        <!-- Thêm các dự án khác với tiến trình vào đây -->
+      </table>
+    </div>
+
+    <footer>
+      <p>© 2024 Nhóm ABC. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it to open the default tab
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
