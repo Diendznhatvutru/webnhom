@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group Management</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Nhóm 9</h1>
+      <div class="header-content">
+        <h1>Nhóm 9</h1>
+        <div class="tab">
+          <button
+            class="tablinks"
+            onclick="openTab(event, 'GioiThieu')"
+            id="defaultOpen"
+          >
+            Giới Thiệu
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'ThanhVien')">
+            Thông Tin Thành Viên
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'LienHe')">
+            Liên Hệ
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'DuAn')">
+            Dự Án
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'KetQua')">
+            Kết Quả
+          </button>
+        </div>
+      </div>
     </header>
-    <!-- Tab Menu -->
-    <div class="tab">
-      <button
-        class="tablinks"
-        onclick="openTab(event, 'GioiThieu')"
-        id="defaultOpen"
-      >
-        Giới Thiệu
-      </button>
-      <button class="tablinks" onclick="openTab(event, 'ThanhVien')">
-        Thông Tin Thành Viên
-      </button>
-      <button class="tablinks" onclick="openTab(event, 'LienHe')">
-        Liên Hệ
-      </button>
-      <button class="tablinks" onclick="openTab(event, 'DuAn')">Dự Án</button>
-      <button class="tablinks" onclick="openTab(event, 'KetQua')">
-        Kết Quả
-      </button>
-    </div>
 
-    <!-- Giới thiệu nhóm -->
     <div id="GioiThieu" class="tabcontent">
       <div class="introduction">
         <img
@@ -40,10 +47,7 @@
         />
         <div class="intro-text">
           <h2>Giới Thiệu</h2>
-          <p>
-            Chào mừng đến với nhóm 9! Chúng tôi chuyên về blockchain và cộng
-            đồng.
-          </p>
+          <p>Chào mừng đến với nhóm 9!</p>
         </div>
       </div>
     </div>
@@ -53,23 +57,40 @@
       <h2>Thông Tin Thành Viên</h2>
       <div class="member-grid">
         <div class="member-card">
-          <img src="./img/unnamed.jpg" alt="Member 1 Image" />
-          <h3>Nephine</h3>
-          <p>DRep Pioneer Leader</p>
-          <a href="https://nguyenvandono1.github.io/canhan/" target="_blank"
+          <img
+            src="./img/z5962456959340_d50983da5ec22e5554a0f15890570a7a.jpg "
+            alt="Member 1 Image"
+          />
+          <h3>Nguyễn Văn Điền</h3>
+          <p>Trưởng Nhóm</p>
+
+          <div class="contact-info">
+            <a href="mailto:email@example.com" target="_blank">
+              <i class="fas fa-envelope"></i> Gmail
+            </a>
+            <a href="https://facebook.com/profile" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </div>
+          <a
+            href="https://diendznhatvutru.github.io/hci_23130061/index.html"
+            target="_blank"
             >Website cá nhân</a
           >
         </div>
         <div class="member-card">
-          <img
-            src="./img/z5962456959340_d50983da5ec22e5554a0f15890570a7a.jpg"
-            alt="Member 2 Image"
-          />
-          <h3>Thành viên 2</h3>
+          <img src="./img/unnamed.jpg" alt="Member 2 Image" />
+          <h3>Nguyễn Văn Đô</h3>
           <p>Chức vụ</p>
-          <a
-            href="https://diendznhatvutru.github.io/hci_23130061/index.html"
-            target="_blank"
+          <div class="contact-info">
+            <a href="mailto:email@example.com" target="_blank">
+              <i class="fas fa-envelope"></i> Gmail
+            </a>
+            <a href="https://facebook.com/profile" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </div>
+          <a href="https://nguyenvandono1.github.io/canhan/" target="_blank"
             >Website cá nhân</a
           >
         </div>
@@ -78,8 +99,16 @@
             src="./img/z5962460611979_ee4bb6edbd3b641d3a99308b09fc2e83.jpg"
             alt="Member 3 Image"
           />
-          <h3>Thành viên 3</h3>
+          <h3>Phùng Thị Minh Thư</h3>
           <p>Chức vụ</p>
+          <div class="contact-info">
+            <a href="mailto:email@example.com" target="_blank">
+              <i class="fas fa-envelope"></i> Gmail
+            </a>
+            <a href="https://facebook.com/profile" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </div>
           <a
             href="https://phungthu31.github.io/HCI23130317/index.html"
             target="_blank"
@@ -91,17 +120,33 @@
             src="./img/z5962519282041_6022d483a0e2f2523d2d2fef318d9c29.jpg"
             alt="Member 4 Image"
           />
-          <h3>Thành viên 4</h3>
+          <h3>Lại Thị Hoa</h3>
           <p>Chức vụ</p>
-          <a href="https://member4website.com" target="_blank"
+          <div class="contact-info">
+            <a href="mailto:email@example.com" target="_blank">
+              <i class="fas fa-envelope"></i> Gmail
+            </a>
+            <a href="https://facebook.com/profile" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </div>
+          <a href="https://laithihoa.github.io/website/" target="_blank"
             >Website cá nhân</a
           >
         </div>
         <div class="member-card">
           <img src="./img/AS (41).jpg" alt="Member 5 Image" />
-          <h3>Thành viên 5</h3>
+          <h3>Thân Văn Danh</h3>
           <p>Chức vụ</p>
-          <a href="https://member5website.com" target="_blank"
+          <div class="contact-info">
+            <a href="mailto:email@example.com" target="_blank">
+              <i class="fas fa-envelope"></i> Gmail
+            </a>
+            <a href="https://facebook.com/profile" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </div>
+          <a href="https://thanvandanhh.github.io/profile/" target="_blank"
             >Website cá nhân</a
           >
         </div>
@@ -112,7 +157,10 @@
     <div id="LienHe" class="tabcontent">
       <h2>Liên Hệ</h2>
       <p>Contact to Email: diennguyen17102005@gmail.com</p>
-      <p>Contact to Facebook: <a href="#">@groupabc</a></p>
+      <p>
+        Contact to Facebook:
+        <a href="https://www.facebook.com/dien1710">@group9</a>
+      </p>
       <p>Contact to Email: 0942607187</p>
     </div>
 
@@ -157,7 +205,7 @@
     </div>
 
     <footer>
-      <p>© 2024 Nhóm ABC. All rights reserved.</p>
+      <p>© 2024 Nhóm 9. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript -->
