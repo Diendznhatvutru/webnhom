@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container2">
+        <a class="navbar-brand" href="#">Nhóm 9</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-center gap-4">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="group-diary.html">Group Diary</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                <li class="nav-item"><a class="nav-link" href="result.html">Result</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div id="ThanhVien" class="content py-5">
+    <div class="container">
+        <!-- <h2 class="text-center mb-4">Thông Tin Thành Viên</h2> -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="members-list">
+            <!-- Các thẻ thành viên sẽ được thêm vào bằng JavaScript -->
+        </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // Dữ liệu thành viên (có thể lấy từ API hoặc database)
+    const members = [
+      {
+        name: "Nguyễn Văn Điền",
+        role: "Trưởng Nhóm",
+        image: "img/Dien.jpg",
+        email: "mailto:email@example.com",
+        facebook: "https://facebook.com/profile",
+        website: "https://diendznhatvutru.github.io/hci_23130061/index.html"
+      },
+      {
+        name: "Nguyễn Văn Đô",
+        role: "Chức vụ",
+        image: "img/Do.jpg",
+        email: "mailto:email@example.com",
+        facebook: "https://facebook.com/profile",
+        website: "https://nguyenvandono1.github.io/canhan/"
+      },
+      {
+        name: "Phùng Thị Minh Thư",
+        role: "Chức vụ",
+        image: "img/Thu.jpg",
+        email: "mailto:email@example.com",
+        facebook: "https://facebook.com/profile",
+        website: "https://phungthu31.github.io/HCI23130317/index.html"
+      },
+      {
+        name: "Lại Thị Hoa",
+        role: "Chức vụ",
+        image: "img/Hoa.jpg",
+        email: "mailto:email@example.com",
+        facebook: "https://facebook.com/profile",
+        website: "https://laithihoa.github.io/website/"
+      },
+      {
+        name: "Thân Văn Danh",
+        role: "Chức vụ",
+        image: "img/Danh.jpg",
+        email: "mailto:email@example.com",
+        facebook: "https://facebook.com/profile",
+        website: "https://thanvandanhh.github.io/profile/"
+      }
+    ];
+
+    // Hàm để tạo thẻ thành viên động
+    function generateMemberCard(member) {
+      return `
+        <div class="col">
+          <div class="card h-100">
+            <img src="${member.image}" alt="Member Image" class="card-img-top"/>
+            <div class="card-body text-center">
+              <h5 class="card-title">${member.name}</h5>
+              <p class="card-text">${member.role}</p>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="${member.email}" target="_blank" class="btn btn-outline-primary btn-sm">
+                  <i class="fas fa-envelope"></i> Gmail
+                </a>
+                <a href="${member.facebook}" target="_blank" class="btn btn-outline-primary btn-sm">
+                  <i class="fab fa-facebook"></i> Facebook
+                </a>
+              </div>
+              <a href="${member.website}" class="btn btn-primary mt-3" title="website" aria-label="website">Website cá nhân</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Thêm các thẻ thành viên vào danh sách
+    const membersList = document.getElementById("members-list");
+    members.forEach(member => {
+      membersList.innerHTML += generateMemberCard(member);
+    });
+  </script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+/* Đặt các biến màu sắc */
+:root {
+  --primary-color: #007bff;
+  --primary-hover-color: #0056b3;
+  --secondary-color: #333;
+  --text-color: #666;
+  --bg-color: #f0f0f0;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+}
+
+/* Đảm bảo không có khoảng trắng trên và dưới */
+.container {
+  max-width: 1200px; /* Thiết lập chiều rộng tối đa cho container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Navbar styles */
+/* Navbar styles */
+.container2 {
+  display: flex;
+  justify-content: space-between; /* Căn chỉnh logo và menu cách đều nhau */
+  align-items: center;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: var(--secondary-color);
+  justify-content: space-between !important;
+  align-items: center !important;
+  position: fixed; /* Giữ menu cố định */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Căn giữa các mục menu */
+  gap: 20px; /* Khoảng cách giữa các mục */
+}
+
+/* Logo (navbar-brand) */
+.navbar-brand {
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* Các mục menu trong navbar */
+
+.navbar-nav li {
+  margin: 0 10px;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav a:hover {
+  background-color: var(--primary-hover-color);
+}
+
+/* Khi navbar thu gọn, các phần tử vẫn có thể hiển thị đúng */
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Header styles */
+header {
+  background: rgb(81, 82, 93);
+  color: white;
+  margin: 50px auto 20px; /* Giảm margin trên và căn giữa */
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.intro-text {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.intro-text h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.intro-text p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 100%; /* Đảm bảo card chiếm toàn bộ chiều rộng có sẵn */
+  max-width: 400px; /* Giới hạn độ rộng tối đa của card */
+}
+
+/* Điều chỉnh cho tên thành viên, tránh xuống dòng và thêm dấu "..." khi tên quá dài */
+.card-title {
+  white-space: nowrap; /* Ngăn không cho tên xuống dòng */
+  overflow: hidden; /* Ẩn phần tên bị tràn */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm nếu tên dài quá */
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Cải thiện hiển thị của các button */
+.btn {
+  text-transform: none; /* Giữ chữ cái viết thường trong các nút */
+}
+
+/* Căn giữa ảnh trong card */
+.card-img-top {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%; /* Giới hạn kích thước ảnh */
+  height: auto;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+/* Project */
+/* Đảm bảo rằng các tab nội dung luôn ở dưới và không bị lệch */
+.tab-content {
+  margin-top: 20px; /* Khoảng cách giữa các tab và nội dung */
+  padding-top: 20px; /* Khoảng cách từ trên cùng */
+}
+
+/* Tùy chỉnh giao diện của các tab */
+.nav-pills .nav-link {
+  font-size: 1.1rem; /* Cải thiện kích thước chữ */
+  padding: 10px 20px; /* Khoảng cách trong các tab */
+}
+
+/* Tùy chỉnh các tab khi chọn */
+.nav-pills .nav-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Đảm bảo các tab nội dung không bị tràn */
+.tab-pane {
+  overflow: hidden;
+}
+
+/* Hiệu ứng gạch chân dưới tab khi nhấn */
+.nav-pills .nav-link.active {
+  color: #007bff; /* Màu chữ khi tab đang được chọn */
+  font-weight: bold; /* Làm chữ đậm khi chọn */
+}
+
+.nav-pills .nav-link:after {
+  content: ""; /* Tạo một phần tử giả */
+  position: absolute;
+  bottom: 0; /* Đặt gạch chân ở dưới cùng của tab */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #007bff; /* Màu của gạch chân */
+  visibility: hidden; /* Không hiển thị khi chưa được chọn */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+/* Khi tab được chọn, hiển thị gạch chân */
+.nav-pills .nav-link.active:after {
+  visibility: visible;
+}
+
+/* Cải thiện khoảng cách giữa các tab */
+.nav-pills {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Khoảng cách giữa các tab */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid #dee2e6;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td {
+  background-color: #f4f6f9;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Styling for editable cells */
+td[contenteditable="true"] {
+  background-color: #e9ecef;
+  outline: none;
+  cursor: text;
+  transition: background-color 0.3s;
+}
+
+td[contenteditable="true"]:hover {
+  background-color: #dfe4ea;
+}
+
+/* Button styling */
+#saveChanges {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+#saveChanges:hover {
+  background-color: #007bff;
+}
+
+#saveChanges:active {
+  transform: scale(0.98);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 8px 10px;
+  }
+
+  #saveChanges {
+    width: 90%;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #0a0a0aa7;
+  color: white;
+}
+td a {
+  color: #111111;
+  text-decoration: none;
+}
+td a:hover {
+  text-decoration: underline;
+}
+td[contenteditable] {
+  background-color: #f9f9f9;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.nav-link {
+  font-size: 1.2rem; /* Tăng kích thước chữ của tab */
+  padding: 15px 20px; /* Tăng padding cho tab */
+  background-color: gray; /* Màu nền của tab */
+  color: white; /* Màu chữ của tab */
+}
+
+.nav-link.active {
+  background-color: darkgray; /* Màu nền của tab đang hoạt động */
+}
+
+.progress-bar {
+  background-color: gray; /* Màu của thanh tiến độ */
+}
+#modalImage {
+  max-width: 100%;
+  max-height: 80vh;
+}

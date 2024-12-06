@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .menu {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      .menu button {
+        background-color: gray;
+        border: 2px solid #636463;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container2">
+        <a class="navbar-brand" href="#">Nhóm 9</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 justify-content-center gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="group-diary.html">Group Diary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="result.html">Result</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="menu">
+        <button class="btn btn-primary" onclick="showTable('week1')">
+          Tuần 1
+        </button>
+        <button class="btn btn-primary" onclick="showTable('week2')">
+          Tuần 2
+        </button>
+        <button class="btn btn-primary" onclick="showTable('week3')">
+          Tuần 3
+        </button>
+      </div>
+
+      <div id="tables">
+        <div id="week1" class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Công việc được giao</th>
+                <th>Kết quả</th>
+                <th>Tiến độ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130061</td>
+                <td contenteditable="true">Nguyễn Văn Điền</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng:Tạo giao diện,Tổng hợp các chức năng
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130043</td>
+                <td contenteditable="true">Thân Văn Danh</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Tạo giao diện và chức năng Project
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130111</td>
+                <td contenteditable="true">Lại Thị Hoa</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Login trong Project
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130063</td>
+                <td contenteditable="true">Nguyễn Văn Đô</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Tạo giao diện và chức năng Group-diary
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130317</td>
+                <td contenteditable="true">Phùng Thị Minh Thư</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Chỉnh giao diện chung trong web nhóm và
+                  Design trong Project
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="week2" class="table-container" style="display: none">
+          <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Công việc được giao</th>
+                <th>Kết quả</th>
+                <th>Tiến độ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130061</td>
+                <td contenteditable="true">Nguyễn Văn Điền</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: User và History Transaction trong Web
+                  Project
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130043</td>
+                <td contenteditable="true">Thân Văn Danh</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Home và Wallet trong Web Project
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130111</td>
+                <td contenteditable="true">Lại Thị Hoa</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Saving và Logout trong Web Project
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130063</td>
+                <td contenteditable="true">Nguyễn Văn Đô</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Setting trong Web Project
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130317</td>
+                <td contenteditable="true">Phùng Thị Minh Thư</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Transfer trong Web Project
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="week3" class="table-container" style="display: none">
+          <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Công việc được giao</th>
+                <th>Kết quả</th>
+                <th>Tiến độ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130061</td>
+                <td contenteditable="true">Nguyễn Văn Điền</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Tạo mẫu F và Z trong phần User, Giới thiệu
+                  Về TDHBaNK
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130043</td>
+                <td contenteditable="true">Thân Văn Danh</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Tạo mẫu F và Z trong phần Wallet
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130111</td>
+                <td contenteditable="true">Lại Thị Hoa</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Tạo mẫu F và Z trong phần Saving
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130063</td>
+                <td contenteditable="true">Nguyễn Văn Đô</td>
+                <td contenteditable="true">Yêu cầu chức năng: Implement</td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true">23130317</td>
+                <td contenteditable="true">Phùng Thị Minh Thư</td>
+                <td contenteditable="true">
+                  Yêu cầu chức năng: Tạo mẫu F và Z Trong phần Transfer và phần
+                  User(Chương trình khuyến mãi)
+                </td>
+                <td contenteditable="true">Hoàn thành</td>
+                <td contenteditable="true">100%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showTable(week) {
+        const tables = document.querySelectorAll(".table-container");
+        tables.forEach((table) => {
+          table.style.display = "none";
+        });
+        document.getElementById(week).style.display = "block";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
