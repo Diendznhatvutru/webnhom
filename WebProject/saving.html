@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Saving</title>
+    <style>
+      :root {
+        --primary: #82c8e5;
+        --secondary: #3b8ab5;
+        --dark: #0c0c0c;
+        --black: #171717;
+        --white: #fffafa;
+        --bone: #f2eadb;
+        --gray: #7a7a7a;
+        --lightgray: #a4a4a4;
+        --aud: "Audiowide", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      body {
+        background-color: var(--black);
+        color: var(--white);
+        font-family: "Poppins", sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#" class="logo">
+        <i class="bx bx-code-alt"></i>
+        <div class="logo-name"><span>THD</span>BANK</div>
+      </a>
+      <ul class="side-menu">
+        <li>
+          <a href="home.html"><i class="bx bx-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="wallet.html"><i class="bx bx-wallet"></i>Wallet</a>
+        </li>
+        <li>
+          <a href="transfer.html"><i class="bx bx-transfer-alt"></i>Transfer</a>
+        </li>
+        <li class="active">
+          <a href="#"><i class="bx bx-leaf"></i>Saving</a>
+        </li>
+        <li>
+          <a href="user.html"><i class="bx bx-group"></i>Users</a>
+        </li>
+        <li>
+          <a href="historytransaction.html"
+            ><i class="bx bx-bell"></i>History</a
+          >
+        </li>
+        <li>
+          <a href="setting.html"><i class="bx bx-cog"></i>Settings</a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bx-log-out-circle"></i>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Navbar -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Search..." />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+        </form>
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="#" class="notif">
+          <i class="bx bx-bell"></i>
+          <span class="count">12</span>
+        </a>
+        <a href="#" class="profile">
+          <img src="./img/logo.png" />
+        </a>
+      </nav>
+      <!-- End of Navbar -->
+      <section class="hero">
+        <div class="container-hero">
+          <div class="content-hero">
+            <h1
+              class="title"
+              data-aos="fade-down"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              SAVING
+            </h1>
+            <img
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+              src=""
+              alt="money"
+            />
+            <div
+              class="short-desc-1"
+              data-aos="fade-right"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+            >
+              <p>IT'S NOT ABOUT HOW MUCH YOU EARN BUT HOW MUCH YOU SAVE.</p>
+              <hr />
+            </div>
+            <div
+              class="short-desc-2"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
+              <p>SAVING MONEY</p>
+              <hr />
+            </div>
+
+            <div
+              class="description"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+            >
+              <div class="status">
+                <div class="stats">
+                  <p>Fixed-term savings</p>
+                </div>
+                <div class="stats">
+                  <p>Non-fixed-term savings</p>
+                </div>
+                <div class="stats">
+                  <h1></h1>
+                  <p>Online savings</p>
+                </div>
+              </div>
+              <hr />
+              <a href="more.html">
+                <span
+                  >Discover More
+                  <box-icon class="arrow" name="arrow-back"></box-icon
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-1" id="product">
+        <div class="container-hero">
+          <div class="content-hero">
+            <div class="left-side">
+              <div
+                class="type-disc"
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
+                <h1>Online savings</h1>
+                <p>Top</p>
+              </div>
+
+              <h1
+                class="name"
+                data-aos="fade-right"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
+                One month
+              </h1>
+              <div
+                class="action-feature-container"
+                data-aos="fade-right"
+                data-aos-delay="600"
+                data-aos-duration="1000"
+              >
+                <div class="action-price">
+                  <button>Interest rate</button>
+
+                  <h1><span>3.00%</span>4.00%</h1>
+
+                  <a href="#"
+                    >More
+                    <box-icon fill="#0c0c0c" name="chevron-right"></box-icon
+                  ></a>
+                </div>
+
+                <div class="features">
+                  <div class="feature">
+                    <p>Short-term</p>
+                    <h1>One month</h1>
+                  </div>
+                  <div class="feature">
+                    <p>Interest rate</p>
+                    <h1>4.00%</h1>
+                  </div>
+                  <div class="feature">
+                    <p>Pros</p>
+                    <h1>Attractive interest rates</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="right-side"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
+              <img src="img/bank (2).png" alt="bank_1" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-2">
+        <div class="container-hero">
+          <div class="content-hero">
+            <div class="left-side">
+              <div
+                class="type-disc"
+                data-aos="fade-left"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
+                <h1>Online savings</h1>
+                <p>Top</p>
+              </div>
+
+              <h1
+                class="name"
+                data-aos="fade-left"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
+                Three months
+              </h1>
+
+              <div
+                class="action-feature-container"
+                data-aos="fade-left"
+                data-aos-delay="600"
+                data-aos-duration="1000"
+              >
+                <div class="action-price">
+                  <button>Interest rate</button>
+
+                  <h1><span>3.40%</span>4.30%</h1>
+
+                  <a href="#"
+                    >More
+                    <box-icon fill="#0c0c0c" name="chevron-right"></box-icon
+                  ></a>
+                </div>
+
+                <div class="features">
+                  <div class="feature">
+                    <p>Short-term</p>
+                    <h1>Three months</h1>
+                  </div>
+                  <div class="feature">
+                    <p>Interest rate</p>
+                    <h1>4.30%</h1>
+                  </div>
+                  <div class="feature">
+                    <p>Pros</p>
+                    <h1>Capital preservation, no risk</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="right-side"
+              data-aos="fade-right"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
+              <img src="img/bank_5.png" alt="bank_2" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div
+          class="left-side"
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+        >
+          <img src="img/bank_3.png" alt="about" />
+        </div>
+
+        <div
+          class="right-side"
+          data-aos="fade-left"
+          data-aos-delay="800"
+          data-aos-duration="1000"
+        >
+          <div
+            class="title"
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <h1 class="row-1">
+              About
+              <hr />
+            </h1>
+            <h1 class="row-2">App online</h1>
+          </div>
+          <p data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
+            Online savings through banking apps are becoming increasingly
+            popular due to their convenience and attractive interest rates.
+            Compared to in-branch deposits, online savings rates are typically
+            0.1% to 0.5% higher annually, depending on the bank. Users can
+            easily open a savings account anytime, anywhere, without visiting a
+            physical branch. Additionally, transactions are highly secure and
+            can be monitored directly within the app. This is an ideal option
+            for those looking to maximize returns on idle funds in a safe and
+            flexible manner.
+          </p>
+          <button>Read More</button>
+        </div>
+      </section>
+
+      <section class="product-3">
+        <div class="container-hero">
+          <div class="content-hero">
+            <div class="left-side">
+              <div
+                class="type-disc"
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
+                <h1>Online savings</h1>
+                <p>Top</p>
+              </div>
+
+              <h1
+                class="name"
+                data-aos="fade-right"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
+                Twelve months
+              </h1>
+
+              <div
+                class="action-feature-container"
+                data-aos="fade-right"
+                data-aos-delay="600"
+                data-aos-duration="1000"
+              >
+                <div class="action-price">
+                  <button>Interest rate</button>
+
+                  <h1><span>5.40%</span>5.80%</h1>
+
+                  <a href="#"
+                    >More
+                    <box-icon fill="#0c0c0c" name="chevron-right"></box-icon
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="right-side"
+              data-aos="zoom-in"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
+              <img src="img/bank_4.png" alt="bank_3" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pre-order" id="pre-order">
+        <div
+          class="content-hero"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <h1 class="title">Saving now?</h1>
+          <p class="desc">
+            Saving money now is a smart step towards securing a stable financial
+            future. By starting early, even with small amounts, you can take
+            advantage of compound interest to grow your savings over time.
+            Prioritizing savings today can lead to greater financial
+            independence tomorrow.
+          </p>
+          <button class="action">
+            <span>GO NOW </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="subsidies" id="subsidies">
+        <div
+          class="content-hero"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <h2>You can try</h2>
+          <h1>How much will you save?</h1>
+          <button class="action">
+            <span>CHECK NOW </span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

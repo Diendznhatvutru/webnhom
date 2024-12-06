@@ -3,48 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      id="kadence-fonts-css"
-      href="https://fonts.googleapis.com/css?family=Outfit:regular,700,500&amp;display=swap"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
-      integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Document</title>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <div class="container">
-      <div class="login_box">
-        <h2>Login</h2>
+      <div class="register_box">
+        <h2>Register</h2>
         <form action="#">
           <div class="input_box">
             <input type="email" placeholder="Email" />
-            <label><i class="ri-mail-line"></i>Email</label>
+            <label> <i class="ri-mail-line"></i>Email</label>
           </div>
           <div class="input_box">
             <input type="password" placeholder="Password" />
             <label><i class="ri-lock-line"></i>Password</label>
           </div>
-          <div class="forgot_pass">
-            <a href="forgotpassword.html">Forgot your password?</a>
+          <div class="input_box">
+            <input type="password" placeholder="Confirm password." />
+            <label><i class="ri-lock-2-line"></i>Comfirm password</label>
           </div>
-          <button type="submit" class="btn">Login</button>
-          <div class="signup_link">
-            <a href="register.html">Register </a>
+          <button type="submit" class="btn" id="register">Register</button>
+          <div class="login_link">
+            <a href="index.html">Already have an account? Login</a>
           </div>
         </form>
       </div>
-      <!-- Create 50 spans for the circular effect -->
       <span style="--i: 0"></span>
       <span style="--i: 1"></span>
       <span style="--i: 2"></span>
