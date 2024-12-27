@@ -59,31 +59,31 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Nguyễn Văn Điền",
       task: "Thiết kế giao diện người dùng",
       status: "Hoàn thành",
-      image: "img/Desgin_1.png",
+      image: "img/DienDesgin2.jpg",
     },
     {
       name: "Phùng Thị Minh Thư",
       task: "Thiết kế cơ sở dữ liệu",
       status: "Hoàn thành",
-      image: "img/Design_01.png",
+      image: "img/ThuDesgin.jpg",
     },
     {
       name: "Lại Thị Hoa",
       task: "Thiết kế cơ sở dữ liệu",
       status: "Hoàn thành",
-      image: "img/login.png",
+      image: "img/HoaDesgin.jpg",
     },
     {
       name: "Nguyễn Văn Đô",
       task: "Thiết kế giao diện",
       status: "Hoàn thành",
-      image: "img/group-diary.jpg",
+      image: "img/DoDesgin.jpg",
     },
     {
       name: "Thân Văn Danh",
       task: "Thiết kế giao diện",
       status: "Hoàn thành",
-      image: "img/thietketall.png",
+      image: "img/DanhDesgin.jpg",
     },
   ];
 
@@ -115,25 +115,25 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Phùng Thị Minh Thư",
       task: "Thiết kế cơ sở dữ liệu",
       status: "Đang thực hiện",
-      image: "img/Design_01.png",
+      image: "img/ThuImplement.jpg",
     },
     {
       name: "Lại Thị Hoa",
       task: "Thiết kế cơ sở dữ liệu",
       status: "Đang thực hiện",
-      image: "img/Hoa.jpg",
+      image: "img/Hoaimplementations.jpg",
     },
     {
       name: "Nguyễn Văn Đô",
       task: "Thiết kế giao diện",
       status: "Đang thực hiện",
-      image: "img/group-diary.jpg",
+      image: "img/Doimplementations.jpg",
     },
     {
       name: "Thân Văn Danh",
       task: "Thiết kế giao diện",
       status: "Đang thực hiện",
-      image: "img/Danh.jpg",
+      image: "img/Danhimplementations.jpg",
     },
   ];
 

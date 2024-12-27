@@ -1,59 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Result</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom Styles */
+      body {
+        background-color: #f8f9fa;
+      }
+      .navbar {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .container {
+        max-width: 1100px;
+      }
+      .card {
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+      }
+      .card img {
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+        border-radius: 50%; /* Make the image circular */
+        margin: 20px auto; /* Center the image inside the card */
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .card h5 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      .card-text {
+        font-size: 0.95rem;
+        color: #6c757d;
+        margin-bottom: 1rem;
+      }
+      .btn {
+        border-radius: 50px;
+        font-size: 0.9rem;
+      }
+      .row {
+        row-gap: 2rem; /* Add vertical spacing between rows */
+      }
+      footer {
+        margin-top: 2rem;
+        background-color: #343a40;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container2">
-            <a class="navbar-brand" href="#">Nhóm 9</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav w-100 justify-content-center gap-4">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="group-diary.html">Group Diary</a></li>
-                    <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
-                    <li class="nav-item"><a class="nav-link" href="result.html">Result</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">Nhóm 9</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 justify-content-center gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="group-diary.html">Group Diary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="result.html">Result</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    <div id="KetQua" class="content">
-        <h2>Kết Quả</h2>
-        <table class="result-table">
-            <tr>
-                <th>Tên Dự Án</th>
-                <th>Tiến Trình (%)</th>
-            </tr>
-            <tr>
-                <td>Dự án 1</td>
-                <td>
-                    <progress value="75" max="100"></progress> 75%
-                </td>
-            </tr>
-            <tr>
-                <td>Dự án 2</td>
-                <td>
-                    <progress value="50" max="100"></progress> 50%
-                </td>
-            </tr>
-            <!-- Thêm các dự án khác với tiến trình vào đây -->
-        </table>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h1 class="text-center mb-5">Kết Quả Nhóm</h1>
+      <div class="row">
+        <!-- Member 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/Dien.jpg" class="card-img-top" alt="Nguyễn Văn A" />
+            <div class="card-body">
+              <h5 class="card-title">Nguyễn Văn Điền</h5>
+              <p class="card-text">Thiết kế giao diện và lập trình HTML/CSS.</p>
+              <a
+                href="https://diendznhatvutru.github.io/hci_23130061/Result.html"
+                class="btn btn-primary"
+                >Xem Kết Quả</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Member 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/Danh.jpg" class="card-img-top" alt="Nguyễn Thị B" />
+            <div class="card-body">
+              <h5 class="card-title">Thân Văn Danh</h5>
+              <p class="card-text">Xây dựng cơ sở dữ liệu và backend.</p>
+              <a
+                href="https://thanvandanhh.github.io/profile/result.html"
+                class="btn btn-primary"
+                >Xem Kết Quả</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Member 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/Hoa.jpg" class="card-img-top" alt="Trần Văn C" />
+            <div class="card-body">
+              <h5 class="card-title">Lại Thị Hoa</h5>
+              <p class="card-text">Kiểm thử và đảm bảo chất lượng mã nguồn.</p>
+              <a
+                href="https://laithihoa.github.io/Website_CaNhan/#tab4"
+                class="btn btn-primary"
+                >Xem Kết Quả</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <!-- Member 4 -->
+        <div class="col-md-6">
+          <div class="card">
+            <img src="img/Thu.jpg" class="card-img-top" alt="Phạm Văn D" />
+            <div class="card-body">
+              <h5 class="card-title">Phùng Thị Minh Thư</h5>
+              <p class="card-text">Viết tài liệu và trình bày báo cáo nhóm.</p>
+              <a
+                href="https://phungthu31.github.io/HCI23130317/result.html"
+                class="btn btn-primary"
+                >Xem Kết Quả</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Member 5 -->
+        <div class="col-md-6">
+          <div class="card">
+            <img src="img/Do.jpg" class="card-img-top" alt="Lê Thị E" />
+            <div class="card-body">
+              <h5 class="card-title">Nguyễn Văn Đô</h5>
+              <p class="card-text">Nghiên cứu và tối ưu giải pháp.</p>
+              <a
+                href="https://nguyenvandono1.github.io/website/#"
+                class="btn btn-primary"
+                >Xem Kết Quả</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <p>© 2024 Nhóm ABC. All rights reserved.</p>
+      <p>© 2024 Nhóm 9. All rights reserved.</p>
     </footer>
-    <!-- Bootstrap 5 JS Bundle -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
