@@ -114,25 +114,25 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       name: "Phùng Thị Minh Thư",
       task: "Thiết kế cơ sở dữ liệu",
-      status: "Đang thực hiện",
+      status: "Hoàn thành",
       image: "img/ThuImplement.jpg",
     },
     {
       name: "Lại Thị Hoa",
       task: "Thiết kế cơ sở dữ liệu",
-      status: "Đang thực hiện",
+      status: "Hoàn thành",
       image: "img/Hoaimplementations.jpg",
     },
     {
       name: "Nguyễn Văn Đô",
       task: "Thiết kế giao diện",
-      status: "Đang thực hiện",
+      status: "Hoàn thành",
       image: "img/Doimplementations.jpg",
     },
     {
       name: "Thân Văn Danh",
       task: "Thiết kế giao diện",
-      status: "Đang thực hiện",
+      status: "Hoàn thành",
       image: "img/Danhimplementations.jpg",
     },
   ];
