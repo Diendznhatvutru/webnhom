@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Nguyễn Văn Điền",
       task: "Thiết kế giao diện người dùng",
       status: "Hoàn thành",
-      image: "img/Dien.jpg",
+      image: "img/dienimplemnt.jpg",
     },
     {
       name: "Phùng Thị Minh Thư",
